@@ -10,6 +10,7 @@ import StudySpacesScreen from "../screens/StudySpacesScreen";
 import PeopleScreen from "../screens/PeopleScreen";
 import RoomsScreen from "../screens/RoomsScreen";
 import SettingsScreen from "../screens/SettingsScreen";
+import EventsScreen from "../screens/EventsScreen";
 
 const screens = {
   Timetable: {
@@ -26,6 +27,9 @@ const screens = {
   },
   Settings: {
     screen: SettingsScreen,
+  },
+  Events: {
+    screen: EventsScreen,
   },
 };
 
@@ -49,6 +53,9 @@ export default createBottomTabNavigator(screens, {
           break;
         case "Settings":
           iconName = "settings";
+          break;
+        case "Events":
+          iconName = "events";
           break;
         default:
           iconName = "info";
